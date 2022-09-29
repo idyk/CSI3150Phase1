@@ -1,0 +1,120 @@
+* {
+  font-family: cursive;
+}
+
+body {
+  background-color: rgb(243, 243, 243);
+}
+
+#webpageTitle {
+  display: flex;
+  justify-content: center;
+}
+
+#logoImg {
+  display: flex;
+  justify-content: center;
+  padding: 10px 10px;
+  border-radius: 15px;
+  border-style: double;
+  background-color: rgb(184, 176, 103);
+}
+
+h1 {
+  display: inline;
+  color: black;
+  font-size: 30px;
+  padding: 15px;
+}
+
+#titleText {
+  padding-top: 50px;
+  color: goldenrod;
+}
+
+.navBar {
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  width: fit-content;
+  text-decoration: none;
+  padding: 0px;
+  background-color: rgb(184, 176, 103);
+}
+
+ul li {
+  width: fit-content;
+  border-style: outset;
+  border-color: black;
+  display: inline-block;
+}
+
+ul li a {
+  display: inline-block;
+  padding: 15px 35px;
+  color: black;
+  text-decoration: none;
+  width: 10vw;
+  text-align: center;
+}
+
+ul li a:hover {
+  background-color: rgb(119, 113, 63);
+}
+
+#introInformation {
+  border: 5px;
+  border-style: ridge;
+}
+
+#inspirationalQuote {
+  font-style: italic;
+  font-stretch: expanded;
+  text-align: center;
+  color: cornflowerblue;
+  font-weight: bold;
+}
+
+#introParagraph {
+  width: fit-content;
+  font-size: 35px;
+}
+
+/* hardware guide  */
+
+#refSidebar {
+  flex: 1;
+  margin-left: 4%;
+}
+
+#sidebarList {
+  text-decoration: none;
+  width: 0;
+  text-decoration: none;
+  padding: 0px;
+  background-color: none;
+}
+
+.sidebar {
+  margin: 10px;
+  margin-right: -1px;
+  border-style: solid;
+  background-color: rgb(152, 94, 201);
+}
+
+.sidebarHover:hover {
+  background-color: rgb(194, 177, 216);
+  border-style: dotted;
+}
+
+#pageGroup {
+  background-color: rgb(100, 136, 168);
+  display: flex;
+  padding: 0px 0px 0px 0px;
+  height: 100vh;
+}
+main {
+  width: 75%;
+}
