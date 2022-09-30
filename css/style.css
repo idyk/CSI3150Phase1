@@ -18,6 +18,8 @@ body {
   border-radius: 15px;
   border-style: double;
   background-color: rgb(184, 176, 103);
+  width: 130px;
+  height: 130px;
 }
 
 h1 {
@@ -29,7 +31,7 @@ h1 {
 
 #titleText {
   padding-top: 50px;
-  color: goldenrod;
+  color: black;
 }
 
 .navBar {
@@ -41,7 +43,6 @@ ul {
   width: fit-content;
   text-decoration: none;
   padding: 0px;
-  background-color: rgb(184, 176, 103);
 }
 
 ul li {
@@ -49,6 +50,7 @@ ul li {
   border-style: outset;
   border-color: black;
   display: inline-block;
+  background-color: rgb(184, 176, 103);
 }
 
 ul li a {
@@ -58,6 +60,7 @@ ul li a {
   text-decoration: none;
   width: 10vw;
   text-align: center;
+  font-size: small;
 }
 
 ul li a:hover {
@@ -86,7 +89,8 @@ ul li a:hover {
 
 #refSidebar {
   flex: 1;
-  margin-left: 4%;
+  border-style: solid;
+  padding: 15px;
 }
 
 #sidebarList {
@@ -104,17 +108,78 @@ ul li a:hover {
   background-color: rgb(152, 94, 201);
 }
 
+.sidebar a {
+  width: 220px;
+}
+
 .sidebarHover:hover {
   background-color: rgb(194, 177, 216);
   border-style: dotted;
 }
 
 #pageGroup {
-  background-color: rgb(100, 136, 168);
   display: flex;
   padding: 0px 0px 0px 0px;
-  height: 100vh;
 }
+
 main {
+  padding: 14px;
+  border-style: solid;
+  height: 500px;
   width: 75%;
+  overflow-y: auto;
+}
+
+/* Adjust for different display sizes */
+@media (max-width: 1080px) {
+  ul li a {
+    padding: 5px;
+    width: 8vw;
+    text-align: center;
+    font-size: 6px;
+  }
+
+  #logoImg {
+    padding: 3px 3px;
+    width: 100px;
+    height: 100px;
+  }
+
+  h1 {
+    display: block;
+    color: black;
+    font-size: 20px;
+    padding: 5px;
+  }
+
+  .typeTitle {
+    font-size: small;
+  }
+
+  main {
+    padding: 5px;
+    border-style: solid;
+    width: 75%;
+    overflow-y: auto;
+    font-size: 70%;
+  }
+
+  #refSidebar {
+    flex: 1;
+    border-style: solid;
+    padding: 0px;
+    margin-left: -1%;
+  }
+}
+
+@media (max-width: 1651px) {
+  .sidebar a {
+    width: 220px;
+  }
+}
+
+@media (max-width: 1500px) {
+  .sidebar a {
+    width: 40px;
+  }
 }
