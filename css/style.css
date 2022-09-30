@@ -51,6 +51,7 @@ ul li {
   border-color: black;
   display: inline-block;
   background-color: rgb(184, 176, 103);
+  border-radius: 31px;
 }
 
 ul li a {
@@ -61,6 +62,7 @@ ul li a {
   width: 10vw;
   text-align: center;
   font-size: small;
+  border-radius: 31px;
 }
 
 ul li a:hover {
@@ -81,8 +83,9 @@ ul li a:hover {
 }
 
 #introParagraph {
-  width: fit-content;
-  font-size: 35px;
+  font-size: 25px;
+  margin-left: 155px;
+  margin-right: 155px;
 }
 
 /* hardware guide  */
@@ -90,7 +93,8 @@ ul li a:hover {
 #refSidebar {
   flex: 1;
   border-style: solid;
-  padding: 15px;
+  padding: 48px;
+  margin-right: 20px;
 }
 
 #sidebarList {
@@ -128,6 +132,11 @@ main {
   height: 500px;
   width: 75%;
   overflow-y: auto;
+}
+
+.guidePictures {
+  width: 300px;
+  padding-left: 10%;
 }
 
 /* Adjust for different display sizes */
