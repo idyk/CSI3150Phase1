@@ -88,33 +88,37 @@ ul li a:hover {
   margin-right: 155px;
 }
 
-/* hardware guide  */
+/* sidebar css for all pages that use it */
+
+/* box id for all sidebar components */
 #refSidebar {
-  flex: 1;
+  display: flex;
   border-style: solid;
-  padding: 0px;
-  margin-right: 20px;
+  margin-right: 1%;
 }
 
+/* ul equivalent for the sidebar */
 #sidebarList {
   text-decoration: none;
-  width: 0;
   text-decoration: none;
-  padding: 0px;
+  padding: 0px 0px 0px 0px;
   background-color: none;
 }
 
+/* ul li equivalent for the sidebar */
 .sidebar {
-  margin: 10px;
-  margin-right: -1px;
-  border-style: solid;
-  background-color: rgb(152, 94, 201);
+  display: block;
+  padding: 0px;
+  color: black;
+  background-color: blueviolet;
+  text-decoration: none;
+  width: fit-content;
+  text-align: center;
+  font-size: small;
+  border-radius: 50px;
 }
 
-.sidebar a {
-  width: 220px;
-}
-
+/* ul li:hover equivalent for the sidebar */
 .sidebarHover:hover {
   background-color: rgb(194, 177, 216);
   border-style: dotted;
@@ -129,7 +133,7 @@ main {
   padding: 14px;
   border-style: solid;
   height: 500px;
-  width: 75%;
+  width: 100%;
   overflow-y: auto;
 }
 
@@ -167,16 +171,13 @@ main {
   main {
     padding: 5px;
     border-style: solid;
-    width: 75%;
     overflow-y: auto;
     font-size: 70%;
   }
 
   #refSidebar {
-    flex: 1;
     border-style: solid;
     padding: 0px;
-    margin-left: -1%;
   }
 }
 
