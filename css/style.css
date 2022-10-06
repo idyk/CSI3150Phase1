@@ -1,57 +1,61 @@
+/* apply same font globally */
 * {
   font-family: serif;
 }
 
+/* apply same bg-color for all body */
 body {
-  background-color: rgb(243, 243, 243);
+  background-color: #2bfcfc42;
 }
 
+/* for the logo/title */
 #webpageTitle {
   display: flex;
   justify-content: center;
 }
 
-#logoImg {
-  display: flex;
-  justify-content: center;
-}
-
+/* for header 1 elements */
 h1 {
   display: inline;
-  color: black;
+  color: #000000;
   font-size: 30px;
   padding: 15px;
 }
 
+/* for titles within the main section */
 #titleText {
   padding-top: 50px;
-  color: black;
+  color: #000000;
 }
 
+/* for the navigation bar at the top of page */
 .navBar {
   display: flex;
   justify-content: center;
 }
 
+/* for all ul elements, makes it fit to the size of the list */
 ul {
   width: fit-content;
   text-decoration: none;
   padding: 0px;
 }
 
+/* for all ul li elements, makes it side by side */
 ul li {
   width: fit-content;
   border-style: outset;
-  border-color: black;
+  border-color: #000000;
   display: inline-block;
-  background-color: rgb(184, 176, 103);
+  background-color: #ffa500;
   border-radius: 31px;
 }
 
+/* for all ul li a elements, makes it not fill up all space of text */
 ul li a {
   display: inline-block;
   padding: 15px 35px;
-  color: black;
+  color: #000000;
   text-decoration: none;
   width: 10vw;
   text-align: center;
@@ -59,31 +63,36 @@ ul li a {
   border-radius: 31px;
 }
 
+/* gives feedback on hover */
 ul li a:hover {
-  background-color: rgb(119, 113, 63);
+  background-color: #1d95cc3b;
 }
 
+/* for anything in the homepage introInformation section */
 #introInformation {
   border: 5px;
   border-style: ridge;
 }
 
+/* for quotes */
 #inspirationalQuote {
   font-style: italic;
   font-stretch: expanded;
   text-align: center;
   color: cornflowerblue;
   font-weight: bold;
+  margin-left: 22%;
+  margin-right: 22%;
 }
 
+/* for the intro paragraph */
 #introParagraph {
   font-size: 25px;
-  margin-left: 155px;
-  margin-right: 155px;
+  margin-left: 22%;
+  margin-right: 22%;
 }
 
-/* sidebar css for all pages that use it */
-
+/* !!sidebar css for all pages that use it!! */
 /* box id for all sidebar components */
 #refSidebar {
   display: flex;
@@ -96,7 +105,6 @@ ul li a:hover {
   text-decoration: none;
   text-decoration: none;
   padding: 0px 0px 0px 0px;
-  background-color: none;
 }
 
 /* ul li equivalent for the sidebar */
@@ -104,7 +112,6 @@ ul li a:hover {
   display: block;
   padding: 0px;
   color: black;
-  background-color: blueviolet;
   text-decoration: none;
   width: fit-content;
   text-align: center;
@@ -112,25 +119,23 @@ ul li a:hover {
   border-radius: 50px;
 }
 
-/* ul li:hover equivalent for the sidebar */
-.sidebarHover:hover {
-  background-color: rgb(194, 177, 216);
-  border-style: dotted;
-}
-
+/* groups the sidebar and guide sections */
 #pageGroup {
   display: flex;
   padding: 0px 0px 0px 0px;
 }
 
+/* main content of the page, includes all the text and images for the guides */
 main {
   padding: 14px;
   border-style: solid;
   height: 500px;
   width: 100%;
   overflow-y: auto;
+  background-color: rgb(97, 209, 212);
 }
 
+/* universal image adjust */
 .guidePictures {
   width: 300px;
   padding-left: 10%;
@@ -138,6 +143,14 @@ main {
 
 /* Adjust for different display sizes */
 @media (max-width: 1080px) {
+  #inspirationalQuote {
+    font-size: 70%;
+  }
+
+  #introParagraph {
+    font-size: 70%;
+  }
+
   ul li a {
     padding: 5px;
     text-align: center;

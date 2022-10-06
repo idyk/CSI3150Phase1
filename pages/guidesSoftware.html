@@ -7,6 +7,10 @@
     <title>Software Guides</title>
     <link rel="icon" href="../media/images/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="../css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/a6fb45c701.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <header id="title">
@@ -16,7 +20,6 @@
         alt="the website's logo depicting a depressed computer"
         id="logoImg"
       />
-      <h1 id="titleText">Inspirational IT Knowledge Base (For Myself)</h1>
     </section>
   </header>
 
@@ -48,12 +51,35 @@
         <h2 class="typeTitle">Software Guides</h2>
         <p>
           Hardware is nothing without software!!! Here are some guides about how
-          to use reoccuring software.
+          to use reoccuring software!!!!!!!!!!!!!!!
         </p>
         <hr />
         <section id="acronis">
           <details open>
             A computer needing to be imaged or reimaged comes up a lot.
+            <p>
+              What does this mean? Well, a computer's current state, even the
+              state it's in RIGHT NOW could be considered an "image".
+            </p>
+            <p>
+              So let's say you want to take that current state, and put it on
+              another computer... and then mass deploy that image on about 105
+              classroom computers.
+            </p>
+            <p>
+              Well, that's what the software
+              <a href="https://www.acronis.com/en-us/support/trueimage/2021/"
+                >ACRONIS</a
+              >
+              allows you to do! You can capture the image, and then deploy it
+              everywhere! Isn't that GREAT!?!!
+            </p>
+            <p>
+              Of course, this guide only covers the fact that Acronis exists and
+              can let you image a computer. I can't get too specific into what
+              goes into making the image after all.
+              <i class="fa-regular fa-face-smile-wink"></i>
+            </p>
             <summary>Guide #1: Imaging a Computer</summary>
           </details>
         </section>
@@ -64,6 +90,23 @@
           <details open>
             For every computer you give away, you must get its identifying
             information first.
+            <p>
+              This process is made EASY with the use of my inventory
+              script!!!!!! <i class="fa-regular fa-eye-slash"></i> I CANNOT
+              SHARE THIS BUT I WILL SHOW PICTURES!
+              <i class="fa-regular fa-eye-slash"></i>
+            </p>
+            <p>
+              The script lets you get all the information you need within a few
+              clicks. It could use some modification still to make it quicker,
+              but the concept is simple.
+            </p>
+            <p>
+              You run the script, it pulls all the information with many
+              different commands, and then exports the results to a nicely
+              formatted text document. This provides for easy reading of the
+              information, and little interaction with the computer's specifics.
+            </p>
             <summary>Guide #2: Inventorying</summary>
           </details>
         </section>
@@ -73,7 +116,35 @@
         <section id="gparted">
           <details open>
             Computers sometimes won't let you reimage due to how the hard drive
-            is set up.
+            is set up. This program will help you with that.
+            <p>
+              So, let's say that for some reason, Acronis from Guide #1 won't
+              see the drive that you are trying to write over with an image.
+              Lucikly, there is a solution!
+            </p>
+            <p>
+              Since we don't care about what we are wiping over (unless you do,
+              if so back up the files before proceeding!), we can nuke the drive
+              by using
+              <a href="https://gparted.org/download.php">GPARTED.</a> The amd64
+              installation is the way to go for most computers.
+            </p>
+            <p>
+              That's usually the quickest way, but there is another solution
+              through the use of a
+              <a
+                href="https://www.microsoft.com/en-us/software-download/windows10"
+                >Windows 10 Boot Media.</a
+              >
+              This lets you get boot tools, and then you can get into a command
+              prompt outside the main OS to run a diskpart command.
+            </p>
+            <p>
+              If none of these work, it's possible the BIOS settings of the
+              system may need to be adjusted in order to account for a certain
+              drive format. This most likely will never be the case if the
+              computer was recently already imaged, however.
+            </p>
             <summary>Guide #3: Formatting a Drive</summary>
           </details>
         </section>
