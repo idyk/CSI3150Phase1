@@ -14,12 +14,6 @@ body {
 #logoImg {
   display: flex;
   justify-content: center;
-  padding: 10px 10px;
-  border-radius: 15px;
-  border-style: double;
-  background-color: rgb(184, 176, 103);
-  width: 130px;
-  height: 130px;
 }
 
 h1 {
@@ -151,9 +145,8 @@ main {
   }
 
   #logoImg {
-    padding: 3px 3px;
-    width: 100px;
-    height: 100px;
+    width: 44%;
+    height: 44%;
   }
 
   h1 {
