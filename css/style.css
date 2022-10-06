@@ -92,7 +92,7 @@ ul li a:hover {
 #refSidebar {
   flex: 1;
   border-style: solid;
-  padding: 48px;
+  padding: 0px;
   margin-right: 20px;
 }
 
