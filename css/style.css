@@ -28,6 +28,13 @@ h1 {
   color: #000000;
 }
 
+/* footer */
+footer {
+  padding-top: 2%;
+  font-size: small;
+  text-align: center;
+}
+
 /* for the navigation bar at the top of page */
 .navBar {
   display: flex;
@@ -65,7 +72,7 @@ ul li a {
 
 /* gives feedback on hover */
 ul li a:hover {
-  background-color: #1d95cc3b;
+  background-color: #dd9000;
 }
 
 /* for anything in the homepage introInformation section */
@@ -141,6 +148,50 @@ main {
   padding-left: 10%;
 }
 
+/* for the tip box */
+#tip {
+  padding-left: 2%;
+  padding-right: 2%;
+  width: fit-content;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#tipBox {
+  border: 5px;
+  border-style: double;
+  border-radius: 15px;
+  margin: 15px;
+}
+
+#mainTips {
+  margin-left: 0px;
+  margin-right: 0px;
+  border-style: solid;
+  height: auto;
+  width: auto;
+  overflow-y: hidden;
+  background-color: rgb(97, 209, 212);
+}
+
+#buttonSection {
+  display: flex;
+  justify-content: center;
+}
+
+.tipsButton {
+  background-color: #ffa500;
+  width: 45%;
+  height: 100%;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.tipsButton:hover {
+  background-color: #dd9000;
+}
+
 /* Adjust for different display sizes */
 @media (max-width: 1080px) {
   #inspirationalQuote {
@@ -177,6 +228,12 @@ main {
     padding: 5px;
     border-style: solid;
     overflow-y: auto;
-    font-size: 70%;
+    font-size: 55%;
+  }
+
+  footer {
+    padding-top: 2%;
+    font-size: x-small;
+    text-align: center;
   }
 }
