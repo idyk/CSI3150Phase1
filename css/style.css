@@ -144,8 +144,12 @@ main {
 
 /* universal image adjust */
 .guidePictures {
-  width: 300px;
+  width: 18%;
   padding-left: 10%;
+}
+
+.guidePicturesLarge {
+  width: 55%;
 }
 
 /* for the tip box */
@@ -156,13 +160,16 @@ main {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  font-family: "Comic Sans MS";
 }
 
 #tipBox {
   border: 5px;
-  border-style: double;
+  border-style: solid;
+  border-color: rgb(79, 160, 161);
   border-radius: 15px;
   margin: 15px;
+  background-color: rgb(173, 215, 216);
 }
 
 #mainTips {
@@ -186,6 +193,9 @@ main {
   height: 100%;
   padding: 15px;
   border-radius: 15px;
+  border-color: #000000;
+  border-style: solid;
+  font-weight: bolder;
 }
 
 .tipsButton:hover {
@@ -254,5 +264,14 @@ main {
     padding-top: 2%;
     font-size: x-small;
     text-align: center;
+  }
+
+  .guidePictures {
+    width: 12%;
+    padding-left: 10%;
+  }
+
+  .guidePicturesLarge {
+    width: 45%;
   }
 }
