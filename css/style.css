@@ -144,12 +144,12 @@ main {
 
 /* universal image adjust */
 .guidePictures {
-  width: 18%;
+  width: 250px;
   padding-left: 10%;
 }
 
 .guidePicturesLarge {
-  width: 55%;
+  width: 600px;
 }
 
 /* for the tip box */
@@ -267,11 +267,11 @@ main {
   }
 
   .guidePictures {
-    width: 12%;
+    width: 250px;
     padding-left: 10%;
   }
 
   .guidePicturesLarge {
-    width: 45%;
+    width: 385px;
   }
 }
