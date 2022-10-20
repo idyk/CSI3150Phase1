@@ -70,6 +70,7 @@ btn6.addEventListener("click", buttonSixShow);
 
 //functions for each button
 function buttonOneShow() {
+  disableImgButtons();
   mistakesWereMade.muted = true;
   innerBtns.style.opacity = 0;
   issue.classList.remove("issueTwo");
@@ -87,6 +88,7 @@ function buttonOneShow() {
 }
 
 function buttonTwoShow() {
+  enableImgButtons();
   innerBtns.style.opacity = 1;
   issue.classList.remove("issueOne");
   issue.classList.remove("issueThree");
@@ -104,6 +106,7 @@ function buttonTwoShow() {
 }
 
 function buttonThreeShow() {
+  disableImgButtons();
   mistakesWereMade.muted = true;
   innerBtns.style.opacity = 0;
   issue.classList.remove("issueOne");
@@ -122,6 +125,7 @@ function buttonThreeShow() {
 }
 
 function buttonFourShow() {
+  disableImgButtons();
   mistakesWereMade.muted = true;
   innerBtns.style.opacity = 0;
   issue.classList.remove("issueOne");
@@ -140,6 +144,7 @@ function buttonFourShow() {
 }
 
 function buttonFiveShow() {
+  disableImgButtons();
   mistakesWereMade.muted = true;
   innerBtns.style.opacity = 0;
   issue.classList.remove("issueOne");
@@ -158,6 +163,7 @@ function buttonFiveShow() {
 }
 
 function buttonSixShow() {
+  disableImgButtons();
   mistakesWereMade.muted = true;
   innerBtns.style.opacity = 0;
   issue.classList.remove("issueOne");
@@ -199,4 +205,17 @@ function networkImg3() {
   } else {
     issueImg.src = "../media/images/itsok_3.png";
   }
+}
+
+//opacity hides, this makes it where you can't click the invisible buttons
+function disableImgButtons() {
+  imgBtn1.disabled = true;
+  imgBtn2.disabled = true;
+  imgBtn3.disabled = true;
+}
+
+function enableImgButtons() {
+  imgBtn1.disabled = false;
+  imgBtn2.disabled = false;
+  imgBtn3.disabled = false;
 }
