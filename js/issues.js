@@ -36,14 +36,14 @@ let issueContent = [
       "WIRES ARE FUNNNNNNNNNNNNNNN!!!! (do NOT hit the Image 3 button 10 times!)",
   },
   {
-    title: "3",
-    image: "../media/images/itsok_1.jpg",
-    description: "33333",
+    title: "Ratty",
+    image: "../media/images/RATTY.png",
+    description: "Ratty.",
   },
   {
-    title: "4",
-    image: "../media/images/itsok_1.jpg",
-    description: "444444",
+    title: "Gizmo",
+    image: "../media/images/gizmo.png",
+    description: "Gizmo.",
   },
   {
     title: "5",
@@ -195,13 +195,13 @@ function networkImg3() {
   clickCount++;
   console.log("image 3");
   if (clickCount >= 10) {
+    disableImgButtons();
     issueImg.src = "../media/images/why.png";
     issueDesc.innerHTML = "Button privileges REVOKED!";
     mistakesWereMade.currentTime = 0;
     mistakesWereMade.play();
     mistakesWereMade.muted = false;
     innerBtns.style.opacity = 0;
-    disableImgButtons();
     clickCount = 0;
   } else {
     issueImg.src = "../media/images/itsok_3.png";
