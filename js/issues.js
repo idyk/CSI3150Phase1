@@ -13,6 +13,13 @@ const innerBtns = document.getElementById("innerBtnsGrp");
 const imgBtn1 = document.getElementById("imgBtn1");
 const imgBtn2 = document.getElementById("imgBtn2");
 const imgBtn3 = document.getElementById("imgBtn3");
+let issueIndex = 0;
+let dogPets = 0;
+let catPets = 0;
+
+const mobileCheck = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+console.log("On mobile? " + mobileCheck);
 
 //meme
 let clickCount = 0;
@@ -68,8 +75,15 @@ btn4.addEventListener("click", buttonFourShow);
 btn5.addEventListener("click", buttonFiveShow);
 btn6.addEventListener("click", buttonSixShow);
 
+if (mobileCheck == false) {
+  issueImg.addEventListener("mousemove", petTheDog);
+} else {
+  issueImg.addEventListener("click", petTheDog);
+}
+
 //functions for each button
 function buttonOneShow() {
+  issueIndex = 0;
   disableImgButtons();
   mistakesWereMade.muted = true;
   innerBtns.style.opacity = 0;
@@ -88,6 +102,7 @@ function buttonOneShow() {
 }
 
 function buttonTwoShow() {
+  issueIndex = 1;
   enableImgButtons();
   innerBtns.style.opacity = 1;
   issue.classList.remove("issueOne");
@@ -106,6 +121,7 @@ function buttonTwoShow() {
 }
 
 function buttonThreeShow() {
+  issueIndex = 2;
   disableImgButtons();
   mistakesWereMade.muted = true;
   innerBtns.style.opacity = 0;
@@ -125,6 +141,7 @@ function buttonThreeShow() {
 }
 
 function buttonFourShow() {
+  issueIndex = 3;
   disableImgButtons();
   mistakesWereMade.muted = true;
   innerBtns.style.opacity = 0;
@@ -144,6 +161,7 @@ function buttonFourShow() {
 }
 
 function buttonFiveShow() {
+  issueIndex = 4;
   disableImgButtons();
   mistakesWereMade.muted = true;
   innerBtns.style.opacity = 0;
@@ -163,6 +181,7 @@ function buttonFiveShow() {
 }
 
 function buttonSixShow() {
+  issueIndex = 5;
   disableImgButtons();
   mistakesWereMade.muted = true;
   innerBtns.style.opacity = 0;
@@ -219,4 +238,24 @@ function enableImgButtons() {
   imgBtn1.disabled = false;
   imgBtn2.disabled = false;
   imgBtn3.disabled = false;
+}
+
+//the user can pet the dog
+function petTheDog() {
+  console.log(dogPets);
+  if (issueIndex == 2) {
+    console.log("petting the dog");
+    dogPets++;
+    if (mobileCheck == false) {
+      if (dogPets == 999) {
+        console.log("the dog is pet enough");
+        issueImg.src = "../media/images/gizmo.png";
+      }
+    } else {
+      if (dogPets == 15) {
+        console.log("the dog is pet enough");
+        issueImg.src = "../media/images/gizmo.png";
+      }
+    }
+  }
 }
