@@ -201,6 +201,7 @@ function networkImg3() {
     mistakesWereMade.play();
     mistakesWereMade.muted = false;
     innerBtns.style.opacity = 0;
+    disableImgButtons();
     clickCount = 0;
   } else {
     issueImg.src = "../media/images/itsok_3.png";
