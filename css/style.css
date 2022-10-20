@@ -252,6 +252,7 @@ main {
   margin-left: 5%;
   margin-right: 5%;
   background-color: beige;
+  overflow-y: scroll;
 }
 
 .middlePanelContent {
@@ -266,7 +267,8 @@ main {
 }
 
 .issueImg {
-  width: 200px;
+  width: 35%;
+  height: 35%;
 }
 
 .issueGroupDescription {
@@ -281,14 +283,31 @@ main {
   background-color: rgb(162, 233, 197);
 }
 
+.issueThree {
+  background-color: rgb(105, 184, 221);
+}
+
+.issueFour {
+  background-color: rgb(224, 88, 145);
+}
+
+.issueFive {
+  background-color: rgb(139, 139, 202);
+}
+
+.issueSix {
+  background-color: rgb(188, 226, 83);
+}
+
 .innerBtnsGrp {
   display: flex;
   height: 10%;
   opacity: 0;
+  justify-content: center;
 }
 
 .innerBtn {
-  width: 100%;
+  width: 15%;
   height: 100%;
   display: inline;
   border: 4px;
