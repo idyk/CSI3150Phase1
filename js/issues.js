@@ -122,6 +122,7 @@ function buttonTwoShow() {
 
 function buttonThreeShow() {
   issueIndex = 2;
+  dogPets = 0;
   disableImgButtons();
   mistakesWereMade.muted = true;
   innerBtns.style.opacity = 0;
