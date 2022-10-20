@@ -51,3 +51,23 @@ function backButton() {
     console.log("Min index reached");
   }
 }
+
+// while (1) {
+//   setTimeout(flash, 5);
+// }
+
+function flash() {
+  setTimeout(buttBlink, 3000);
+  setTimeout(buttBlinkAgain, 3000);
+  flash();
+}
+
+function buttBlink() {
+  document.getElementById("next").classList.remove("tipsButton");
+  document.getElementById("next").classList.add("tipsButtonBlink");
+}
+
+function buttBlinkAgain() {
+  document.getElementById("next").classList.remove("tipsButtonBlink");
+  document.getElementById("next").classList.add("tipsButton");
+}
