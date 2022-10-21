@@ -79,6 +79,7 @@ btn4.addEventListener("click", buttonFourShow);
 // btn5.addEventListener("click", buttonFiveShow);
 // btn6.addEventListener("click", buttonSixShow);
 
+//Check mobile first to determine which kind of petting method is used
 if (mobileCheck == false) {
   issueImg.addEventListener("mousemove", petTheDog);
   issueImg.addEventListener("mousemove", petTheCat);
@@ -91,9 +92,7 @@ if (mobileCheck == false) {
 function buttonOneShow() {
   issueIndex = 0;
   disableImgButtons();
-  mistakesWereMade.muted = true;
-  youDidIt.muted = true;
-  innerBtns.style.opacity = 0;
+  muteAll();
   issue.classList.remove("issueTwo");
   issue.classList.remove("issueThree");
   issue.classList.remove("issueFour");
@@ -111,9 +110,7 @@ function buttonOneShow() {
 function buttonTwoShow() {
   issueIndex = 1;
   enableImgButtons();
-  innerBtns.style.opacity = 1;
-  mistakesWereMade.muted = true;
-  youDidIt.muted = true;
+  muteAll();
   issue.classList.remove("issueOne");
   issue.classList.remove("issueThree");
   issue.classList.remove("issueFour");
@@ -133,9 +130,7 @@ function buttonThreeShow() {
   issueIndex = 2;
   dogPets = 0;
   disableImgButtons();
-  mistakesWereMade.muted = true;
-  youDidIt.muted = true;
-  innerBtns.style.opacity = 0;
+  muteAll();
   issue.classList.remove("issueOne");
   issue.classList.remove("issueTwo");
   issue.classList.remove("issueFour");
@@ -155,9 +150,7 @@ function buttonFourShow() {
   issueIndex = 3;
   catPets = 0;
   disableImgButtons();
-  mistakesWereMade.muted = true;
-  youDidIt.muted = true;
-  innerBtns.style.opacity = 0;
+  muteAll();
   issue.classList.remove("issueOne");
   issue.classList.remove("issueTwo");
   issue.classList.remove("issueThree");
@@ -242,15 +235,22 @@ function networkImg3() {
 
 //opacity hides, this makes it where you can't click the invisible buttons
 function disableImgButtons() {
+  innerBtns.style.opacity = 0;
   imgBtn1.disabled = true;
   imgBtn2.disabled = true;
   imgBtn3.disabled = true;
 }
 
 function enableImgButtons() {
+  innerBtns.style.opacity = 1;
   imgBtn1.disabled = false;
   imgBtn2.disabled = false;
   imgBtn3.disabled = false;
+}
+
+function muteAll() {
+  mistakesWereMade.muted = true;
+  youDidIt.muted = true;
 }
 
 //the user can pet the dog
@@ -265,7 +265,6 @@ function petTheDog() {
         issueImg.src = "../media/images/RATTY_PET.png";
         issueDesc.innerHTML = "You did it!!!";
         youDidIt.muted = false;
-
         youDidIt.play();
       }
     } else {
