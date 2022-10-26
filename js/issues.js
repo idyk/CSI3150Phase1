@@ -37,7 +37,7 @@ let issueContent = [
       "So this has never happened, but run far far far far far far far far far far far far far far far far far far far far far far far far far far far far far far far far far far far far far far far far far far far far far far far far far far far far far far far far far far far far far far far far far far far far far far far far far far far far far far far far away if it does!",
   },
   {
-    title: "Networking Probs!!!!!",
+    title: "Networking Problems!!!!!",
     image: "../media/images/itsok_1.jpg",
     description:
       "WIRES ARE FUNNNNNNNNNNNNNNN!!!! (do NOT hit the Image 3 button 10 times!)",
