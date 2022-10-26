@@ -1,4 +1,4 @@
-//Make 10 tips to be used in an array.
+//10 tips for the array to store
 let tip0 =
   "If someone doesn't know what you're talking about, explain again! And again! And again! And again!";
 let tip1 = "Computer not working? Sounds like user error!";
@@ -15,6 +15,7 @@ let tip8 =
 let tip9 =
   "Do not toss the computer out the window. (If you even have a window. Then toss it at the wall instead.)";
 
+//Initialize the index to 0.
 // Have an array to store different tips to cycle through on button press. I will have 10 for this.
 let currentTipsListIndex = 0;
 const tipsList = [tip0, tip1, tip2, tip3, tip4, tip5, tip6, tip7, tip8, tip9];
@@ -29,7 +30,7 @@ document.getElementById("next").addEventListener("click", nextButton);
 //Event listener for Previous Tip.
 document.getElementById("previous").addEventListener("click", backButton);
 
-//Progress bar
+//Progress bar's bars...
 const progress1 = document.getElementById("progress1");
 const progress2 = document.getElementById("progress2");
 const progress3 = document.getElementById("progress3");
@@ -41,6 +42,7 @@ const progress8 = document.getElementById("progress8");
 const progress9 = document.getElementById("progress9");
 const progress10 = document.getElementById("progress10");
 
+//Set the default progress bar to 0 on page load.
 document.addEventListener(
   "DOMContentLoaded",
   setProgressBar(currentTipsListIndex)
@@ -73,6 +75,8 @@ function backButton() {
   }
 }
 
+//This function determines the next tip class to add when the back or next buttons are pushed.
+//It uses the index to determine this. It will keep the class it needs, and remove any surrounding classes.
 function setProgressBar(index) {
   console.log("setting bar to index " + index);
   switch (index) {

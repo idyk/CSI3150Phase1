@@ -3,8 +3,6 @@ const btn1 = document.getElementById("btn1");
 const btn2 = document.getElementById("btn2");
 const btn3 = document.getElementById("btn3");
 const btn4 = document.getElementById("btn4");
-// const btn5 = document.getElementById("btn5");
-// const btn6 = document.getElementById("btn6");
 const issue = document.getElementById("issueGroup");
 const issueTitle = document.getElementById("issueGroupTitle");
 const issueImg = document.getElementById("issueImg");
@@ -56,16 +54,6 @@ let issueContent = [
     description:
       "Pet the Gizmo. This is an important issue that you need to resolve right now. Move mouse around image on PC, tap image on mobile.",
   },
-  // {
-  //   title: "5",
-  //   image: "../media/images/itsok_1.jpg",
-  //   description: "555555",
-  // },
-  // {
-  //   title: "6",
-  //   image: "../media/images/itsok_1.jpg",
-  //   description: "66666666",
-  // },
 ];
 
 //event listeners for button clicks
@@ -76,8 +64,6 @@ imgBtn2.addEventListener("click", networkImg2);
 imgBtn3.addEventListener("click", networkImg3);
 btn3.addEventListener("click", buttonThreeShow);
 btn4.addEventListener("click", buttonFourShow);
-// btn5.addEventListener("click", buttonFiveShow);
-// btn6.addEventListener("click", buttonSixShow);
 
 //Check mobile first to determine which kind of petting method is used
 if (mobileCheck == false) {
@@ -96,8 +82,6 @@ function buttonOneShow() {
   issue.classList.remove("issueTwo");
   issue.classList.remove("issueThree");
   issue.classList.remove("issueFour");
-  // issue.classList.remove("issueFive");
-  // issue.classList.remove("issueSix");
   issue.classList.add("issueOne");
   console.log(issueContent[0].title);
   console.log(issueContent[0].image);
@@ -114,8 +98,6 @@ function buttonTwoShow() {
   issue.classList.remove("issueOne");
   issue.classList.remove("issueThree");
   issue.classList.remove("issueFour");
-  // issue.classList.remove("issueFive");
-  // issue.classList.remove("issueSix");
   issue.classList.add("issueTwo");
   console.log("Issue #2");
   console.log(issueContent[1].title);
@@ -134,8 +116,6 @@ function buttonThreeShow() {
   issue.classList.remove("issueOne");
   issue.classList.remove("issueTwo");
   issue.classList.remove("issueFour");
-  // issue.classList.remove("issueFive");
-  // issue.classList.remove("issueSix");
   issue.classList.add("issueThree");
   console.log("Issue #3");
   console.log(issueContent[2].title);
@@ -154,8 +134,6 @@ function buttonFourShow() {
   issue.classList.remove("issueOne");
   issue.classList.remove("issueTwo");
   issue.classList.remove("issueThree");
-  // issue.classList.remove("issueFive");
-  // issue.classList.remove("issueSix");
   issue.classList.add("issueFour");
   console.log("Issue #4");
   console.log(issueContent[3].title);
@@ -165,46 +143,6 @@ function buttonFourShow() {
   issueImg.src = issueContent[3].image;
   issueDesc.innerHTML = issueContent[3].description;
 }
-
-// function buttonFiveShow() {
-//   issueIndex = 4;
-//   disableImgButtons();
-//   mistakesWereMade.muted = true;
-//   innerBtns.style.opacity = 0;
-//   issue.classList.remove("issueOne");
-//   issue.classList.remove("issueTwo");
-//   issue.classList.remove("issueThree");
-//   issue.classList.remove("issueFour");
-//   issue.classList.remove("issueSix");
-//   issue.classList.add("issueFive");
-//   console.log("Issue #5");
-//   console.log(issueContent[4].title);
-//   console.log(issueContent[4].image);
-//   console.log(issueContent[4].description);
-//   issueTitle.innerHTML = issueContent[4].title;
-//   issueImg.src = issueContent[4].image;
-//   issueDesc.innerHTML = issueContent[4].description;
-// }
-
-// function buttonSixShow() {
-//   issueIndex = 5;
-//   disableImgButtons();
-//   mistakesWereMade.muted = true;
-//   innerBtns.style.opacity = 0;
-//   issue.classList.remove("issueOne");
-//   issue.classList.remove("issueTwo");
-//   issue.classList.remove("issueThree");
-//   issue.classList.remove("issueFour");
-//   issue.classList.remove("issueFive");
-//   issue.classList.add("issueSix");
-//   console.log("Issue #6");
-//   console.log(issueContent[5].title);
-//   console.log(issueContent[5].image);
-//   console.log(issueContent[5].description);
-//   issueTitle.innerHTML = issueContent[5].title;
-//   issueImg.src = issueContent[5].image;
-//   issueDesc.innerHTML = issueContent[5].description;
-// }
 
 function networkImg1() {
   console.log("image 1");
@@ -216,6 +154,8 @@ function networkImg2() {
   issueImg.src = "../media/images/itsok_2.png";
 }
 
+//A fun little function.
+//If the user clicks the third image button 10 times, the website will be disappointed in the user.
 function networkImg3() {
   clickCount++;
   console.log("image 3");
@@ -241,6 +181,7 @@ function disableImgButtons() {
   imgBtn3.disabled = true;
 }
 
+//Force enables the image buttons.
 function enableImgButtons() {
   innerBtns.style.opacity = 1;
   imgBtn1.disabled = false;
@@ -248,12 +189,15 @@ function enableImgButtons() {
   imgBtn3.disabled = false;
 }
 
+//Muted any sound used.
 function muteAll() {
   mistakesWereMade.muted = true;
   youDidIt.muted = true;
 }
 
-//the user can pet the dog
+//Function for when the user pets the dog.
+//This has two variations dependent on if the device is mobile or not.
+//It calculates the "pets" based on interaction, and then plays a song and changes the image.
 function petTheDog() {
   console.log(dogPets);
   if (issueIndex == 2) {
@@ -278,7 +222,8 @@ function petTheDog() {
     }
   }
 }
-
+//Function for when the user pets the cat.
+//Same logic as petting the dog.
 function petTheCat() {
   if (issueIndex == 3) {
     console.log("petting the cat");

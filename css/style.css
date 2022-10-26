@@ -1,3 +1,4 @@
+/* Website's font import */
 @import url("https://fonts.googleapis.com/css2?family=Nunito");
 
 /* apply same font globally */
@@ -163,7 +164,7 @@ main {
   width: 600px;
 }
 
-/* for the tip box */
+/* start of css for the tip box */
 #tip {
   padding-left: 2%;
   padding-right: 2%;
@@ -227,6 +228,7 @@ main {
   margin: 10px;
 }
 
+/* These are classes used for when the next or back button is pressed on tips */
 .tipOne {
   background-color: #94195d42;
 }
@@ -267,14 +269,7 @@ main {
   background-color: #94195d42;
 }
 
-/* .memeImg {
-  padding: 5px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 40%;
-  height: 40%;
-} */
-
+/* here starts the CSS directly for the issues page*/
 .buttonGroupTop {
   display: flex;
   height: 10%;
@@ -359,14 +354,6 @@ main {
 .issueFour {
   background-color: rgb(224, 88, 145);
 }
-
-/* .issueFive {
-  background-color: rgb(139, 139, 202);
-}
-
-.issueSix {
-  background-color: rgb(188, 226, 83);
-} */
 
 .innerBtnsGrp {
   display: flex;
