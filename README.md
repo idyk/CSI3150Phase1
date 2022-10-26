@@ -1,1 +1,2 @@
-# CSI3150 Phase1
+# CSI 3150: Phase 1
+A beautiful website to provide information about IT support, and also provides some entertaining user interaction...
